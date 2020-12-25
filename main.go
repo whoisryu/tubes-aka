@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/360EntSecGroup-Skylar/excelize"
 )
 
 func binaryIterative(arrayParams [][]string, searchVariable int) int {
@@ -65,7 +64,7 @@ func main(){
         return
 	}
 	rows:= f.GetRows("angka")
-	
+
 	var cari int
 	fmt.Print("masukkan angka yang dicari:")
 	fmt.Scanln(&cari)
